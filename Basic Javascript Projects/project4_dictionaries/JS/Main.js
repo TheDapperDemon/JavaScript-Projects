@@ -8,5 +8,6 @@ function my_Dictionary() {
         Sound:"Bark!"
     };
     delete Animal.Sound;
+    // This is the line (below) used for the html doc to retrieve the element "Dictionary" from this js file:
     document.getElementById("Dictionary").innerHTML = Animal.Sound;
 }
