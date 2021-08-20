@@ -27,5 +27,5 @@ C--;
 
 function decrement() {
     var simple_Math = C * 3; 
-    document.getElementById("Math4").innerHTML = "variable B is being subtracted a decrement of 1 then multiplied by 3 giving an asnwer of " + simple_Math;
+    document.getElementById("Math4").innerHTML = "variable C is being subtracted a decrement of 1 then multiplied by 3 giving an asnwer of " + simple_Math;
 }
