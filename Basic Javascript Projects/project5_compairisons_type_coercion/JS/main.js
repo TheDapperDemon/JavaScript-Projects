@@ -43,10 +43,6 @@ function and_Operator() {
     document.getElementById("aO").innerHTML = "5 is greater than 2 and 6 is less than 10, becaus they are both true that makes this " + simple_Math;
 }
 
-document.getElementById("tripleEqual").innerHTML = "Y === Z";
-document.getElementById("lessThan").innerHTML = "9 < 10";
-document.getElementById("greaterThan").innerHTML = "10 > 5";
-document.getElementById("andOperator").innerHTML = "5 > 2 && 6 < 10";
 
 // not operator:
 function not_Function() {
