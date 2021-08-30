@@ -1,5 +1,5 @@
 
-// If statement function:
+// If Function:
 
 function get_Date(){
     if (new Date().getHours() <  18) {
@@ -7,7 +7,7 @@ function get_Date(){
     }
 }
 
-// Else statement function:
+// Else Function:
 
 function Age_Function(){
     if (Age >= 18) {
@@ -17,4 +17,21 @@ function Age_Function(){
         Vote = "You are not old enough to vote."
     }
     document.getElementById("How_old_are_you?").innerHTML = Vote;
+}
+
+// Else If Function:
+
+function Time_function(){
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0){
+        Reply = "It is Morning!";
+    }
+    else if (Time >= 12 == Time < 18) {
+            Reply = "It is Afternoon!";
+    }
+    else {
+        Reply = "It is Evening!";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
 }
