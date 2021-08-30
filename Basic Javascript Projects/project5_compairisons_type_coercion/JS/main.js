@@ -8,11 +8,16 @@ var Z = 21
 var str = D + X + Y;
 document.write(str.fontcolor("red"));
 
+// document write type of
+console.log(typeof 5);
+
 // window allert here:
 window.alert("Dapper D3mon!")
-document.write(" Some say, \"Drive like hell and you'll get there!\" \"Live fast, die young, and leave a good lookin corpse!!\" I reply.");
-document.getElementById("total").innerHTML = "Some say, \" Drive like hell and you'll get there! \" ";
-document.getElementById("total2").innerHTML = " \"Live fast, die young, and leave a good lookin corpse!!\" I reply.";
+// document.write(" Some say, \"Drive like hell and you'll get there!\" \"Live fast, die young, and leave a good lookin corpse!!\" I reply.");
+
+// document.getElementById("total").innerHTML = "Some say, \" Drive like hell and you'll get there! \" ";
+
+// document.getElementById("total2").innerHTML = " \"Live fast, die young, and leave a good lookin corpse!!\" I reply.";
 
 
 // double equals, tripple equals, less than, greater than, and the "And/Or" operators:
