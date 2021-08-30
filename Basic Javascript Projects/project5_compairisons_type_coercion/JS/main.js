@@ -15,7 +15,7 @@ document.getElementById("total").innerHTML = "Some say, \" Drive like hell and y
 document.getElementById("total2").innerHTML = " \"Live fast, die young, and leave a good lookin corpse!!\" I reply.";
 
 
-// double equals, tripple equals, less than, greater than, and the "And" operators:
+// double equals, tripple equals, less than, greater than, and the "And/Or" operators:
 function double_Equal() {
     var simple_Math = 10 == 10; 
     document.getElementById("dE").innerHTML = "10 is equal to 10 making this " + simple_Math;
@@ -41,6 +41,10 @@ function and_Operator() {
     document.getElementById("aO").innerHTML = "5 is greater than 2 and 6 is less than 10, becaus they are both true that makes this " + simple_Math;
 }
 
+function or_Operator() {
+    var simple_Math = 5 > 10 || 10 > 4; 
+    document.getElementById("oO").innerHTML = "5 is not greater than 10 and 10 is greater than 4, because only one is true but we are using the or operator we get " + simple_Math;
+}
 
 // not operator:
 function not_Function() {
