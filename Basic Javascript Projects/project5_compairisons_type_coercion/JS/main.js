@@ -8,14 +8,13 @@ var Z = 21
 // window allert here:
 window.alert("Dapper D3mon!")
 document.write("Some say, \"Drive like hell and you'll get there!\" \"Live fast, die young, and leave a good lookin corpse!!\" I reply.");
+document.write(str.fontcolor("red"));
 document.getElementById("total").innerHTML = "Some say, \" Drive like hell and you'll get there! \" ";
 document.getElementById("total2").innerHTML = " \"Live fast, die young, and leave a good lookin corpse!!\" I reply.";
 
 // first expression with a number and a string:
 document.getElementById("total3").innerHTML = D + X + Y;
 
-// firts doc write:
-document.write(str.fontcolor("red"));
 
 // double equals, tripple equals, less than, greater than, and the "And" operators:
 function double_Equal() {
