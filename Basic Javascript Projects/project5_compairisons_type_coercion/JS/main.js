@@ -5,17 +5,14 @@ var Y = 7 * 3;
 var Z = 21
 
 // Variable string and font color:
-var str = "DDProductions";
+var str = D + X + Y;
 document.write(str.fontcolor("red"));
 
 // window allert here:
 window.alert("Dapper D3mon!")
-document.write("Some say, \"Drive like hell and you'll get there!\" \"Live fast, die young, and leave a good lookin corpse!!\" I reply.");
+document.write(" Some say, \"Drive like hell and you'll get there!\" \"Live fast, die young, and leave a good lookin corpse!!\" I reply.");
 document.getElementById("total").innerHTML = "Some say, \" Drive like hell and you'll get there! \" ";
 document.getElementById("total2").innerHTML = " \"Live fast, die young, and leave a good lookin corpse!!\" I reply.";
-
-// first expression with a number and a string:
-document.getElementById("total3").innerHTML = D + X + Y;
 
 
 // double equals, tripple equals, less than, greater than, and the "And" operators:
