@@ -48,5 +48,3 @@ function and_Operator() {
 function not_Function() {
     document.getElementById("Not").innerHTML = ! (20 > 10);
 }
-
-document.getElementById("doubleEqual").innerHTML = "Because of the NotOperator, even though 20 is in fact greater than 10, we will get this answer returned as ";
