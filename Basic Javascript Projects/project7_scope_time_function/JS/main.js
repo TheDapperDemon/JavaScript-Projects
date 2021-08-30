@@ -1,4 +1,5 @@
-
+var Y = 10;
+console.log (Y);
 // If Function:
 
 function get_Date(){
@@ -10,6 +11,7 @@ function get_Date(){
 // Else Function:
 
 function Age_Function(){
+    var Age = document.getElementById("Age").value;
     if (Age >= 18) {
         Vote = "You are old enough to vote!"
     }
@@ -17,7 +19,14 @@ function Age_Function(){
         Vote = "You are not old enough to vote."
     }
     document.getElementById("How_old_are_you?").innerHTML = Vote;
+    console.log (Age);
 }
+
+console.log (X);
+function Error1() {
+    document.write(X);
+}
+
 
 // Else If Function:
 
