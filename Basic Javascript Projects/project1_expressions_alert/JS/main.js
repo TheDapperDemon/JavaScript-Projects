@@ -4,7 +4,6 @@ var D = "Dapper D3mon";
 var X = " is my nickname";
 var str = "Red Text Here";
 var Y = 7 * 3;
-// firts doc write:
 document.write(str.fontcolor("red"));
 // window allert here:
 window.alert("Dapper D3mon!")
