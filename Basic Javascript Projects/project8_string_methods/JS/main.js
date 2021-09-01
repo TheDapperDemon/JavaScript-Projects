@@ -20,3 +20,10 @@ function precision_Method() {
     var X = 12938.3012987376112;
     document.getElementById("Precision").innerHTML = X.toPrecision(10);
 }
+
+// toString method Function:
+function toString_Method() {
+    var num = 15;
+    var n = num.toString();
+    document.getElementById("String").innerHTML = String;
+}
