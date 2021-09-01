@@ -25,5 +25,5 @@ function precision_Method() {
 function toString_Method() {
     var num = 15;
     var n = num.toString();
-    document.getElementById("String").innerHTML = String;
+    document.getElementById("String").innerHTML = n;
 }
