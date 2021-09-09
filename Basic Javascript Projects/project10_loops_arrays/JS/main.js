@@ -7,7 +7,7 @@ function count_To_Ten() {
         Digit += "<br>" + X;
         X++;
     }
-    document.getElementById("Counting_To_Ten").innerHTML = Digit;
+    document.getElementById("count_To_Ten").innerHTML = Digit;
 }
 
 // For loop function:
@@ -22,14 +22,21 @@ function for_Loop() {
     document.getElementById("List_of_Instruments").innerHTML = Content;
 }
 
-// Array function 
+// Array function :
 
 function cat_pics() {
-    var Cat_Pictures = [];
+    var Cat_Picture = [];
     Cat_Picture[0] = "sleeping";
     Cat_Picture[1] = "eating";
     Cat_Picture[2] = "playing";
     Cat_Picture[3] = "purring";
     document.getElementById("Cat").innerHTML = "In this pic, the cat is " + 
         Cat_Picture[2] + ".";
+}
+
+// Object utilizing "let": 
+var B = 25
+document.write(B); {
+    let B = 28;
+    document.write("<br>" + B);
 }
