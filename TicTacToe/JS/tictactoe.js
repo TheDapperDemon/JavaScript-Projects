@@ -1,5 +1,10 @@
+
+
+
 let activePlayer = "X";
 let selectedSquares = [];
+
+
 
 function placeXOrO(squareNumber) {
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
@@ -35,4 +40,10 @@ function placeXOrO(squareNumber) {
             };
         }
     }
+}
+
+
+
+function checkWinConditions() {
+    
 }
