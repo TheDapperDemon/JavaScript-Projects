@@ -22,7 +22,7 @@ function placeXOrO(squareNumber) {
             activePlayer.Player = 'X';
         }
 
-        audio('Media/place.mp3');
+        audio("Media/place.mp3");
         if(activePlayer === "O") {
             dasableClick();
             setTimeout(function (){ computersTurn(); }, 1000)
