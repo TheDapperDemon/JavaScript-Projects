@@ -19,12 +19,12 @@ function placeXOrO(squareNumber) {
         if (activePlayer === 'X') {
             activePlayer = 'O';
         } else {
-            activePlayer.Player = 'X';
+            activePlayer = 'X';
         }
 
         audio("Media/place.mp3");
         if(activePlayer === "O") {
-            dasableClick();
+            disableClick();
             setTimeout(function (){ computersTurn(); }, 1000)
         }
         return true;
@@ -83,7 +83,7 @@ function audio(audioURL) {
     audio.play();
 }
 
-function drawLine(coordX1, coordY1, coordX2, coordY2) {
+function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     const canvas = document.getElementById('win-lines')
     const c = canvas.getContext('2d');
     let x1 = coordX1,
@@ -100,6 +100,7 @@ function drawLine(coordX1, coordY1, coordX2, coordY2) {
         c.lineTo (x, y)
         c.lineWidth = 10;
         c.strokeStyle = 'rgba(70, 255, 33, .8)';
+        c.stroke();
         if (x1 <= x2 && y1 <= y2) {
             if (x < x2) { x += 10; }
             if (y < y2) { y += 10; }
@@ -122,7 +123,7 @@ function drawLine(coordX1, coordY1, coordX2, coordY2) {
         clear();
         resetGame();
     }, 1000);
-
+    }
 }
 
 
@@ -132,5 +133,5 @@ function resetGame() {
         square.style.backgroundImage = ""
     }
     selectedSquares = [];
-    }
 }
+
