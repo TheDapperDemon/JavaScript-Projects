@@ -73,6 +73,13 @@ function checkWinConditions() {
     }
 }
 
+function resetGame() {
+    for (let i = 0; i < 9; i++) {
+        let square = document.getElementById(String(i));
+        square.style.backgroundImage = "";
+    }
+    selectedSquares = [];
+}
 
 function disableClick() {
     body.style.pointerEvents = "none";
@@ -92,6 +99,9 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         y2 = coordY2,
         x = x1,
         y = y1;
+
+
+
     function animateLineDrawing() {
         const animationLoop = requestAnimationFrame(animateLineDrawing);
         c.clearRect(0, 0, 608, 608)
@@ -111,12 +121,13 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             if (y > y2) { y -= 10; }
             if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop); }
         }
+    }
 
     function clear() {
         const animationLoop = requestAnimationFrame(clear);
         c.clearRect(0, 0, 608, 608);
         cancelAnimationFrame(animationLoop);
-        }
+        
     }
     disableClick();
     audio('Media/winGame.mp3');
@@ -125,15 +136,9 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         clear();
         resetGame();
     }, 1000);
-    
 }
 
 
-function resetGame() {
-    for (let i = 0; i < 9; i++) {
-        let square = document.getElementById(String(i))
-        square.style.backgroundImage = ""
-    }
-    selectedSquares = [];
-}
+
+
 
