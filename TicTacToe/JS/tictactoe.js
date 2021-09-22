@@ -78,7 +78,7 @@ function disableClick() {
     body.style.pointerEvents = "none";
     setTimeout(function()  {body.style.pointerEvents = 'auto';}, 1000);
 }
-function ausio(audioURL) {
+function audio(audioURL) {
     let audio = new Audio(audioURL);
     audio.play();
 }
@@ -110,7 +110,19 @@ function drawLine(coordX1, coordY1, coordX2, coordY2) {
             if (y > y2) { y -= 10; }
             if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop); }
         }
+    function clear() {
+        const animationLoop = requestAnimationFrame(clear);
+        c.clearRect(0, 0, 608, 608);
+        cancelAnimationFrame(animationLoop);
     }
+    disableClick();
+    audio('Media/winGame.mp3');
+    animateLineDrawing();
+    setTimeout(function() {
+        clear();
+        resetGame();
+    }, 1000);
+
 }
 
 
@@ -120,4 +132,5 @@ function resetGame() {
         square.style.backgroundImage = ""
     }
     selectedSquares = [];
+    }
 }
