@@ -111,10 +111,12 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             if (y > y2) { y -= 10; }
             if (x >= x2 && y <= y2) {cancelAnimationFrame(animationLoop); }
         }
+
     function clear() {
         const animationLoop = requestAnimationFrame(clear);
         c.clearRect(0, 0, 608, 608);
         cancelAnimationFrame(animationLoop);
+        }
     }
     disableClick();
     audio('Media/winGame.mp3');
@@ -123,7 +125,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         clear();
         resetGame();
     }, 1000);
-    }
+    
 }
 
 
