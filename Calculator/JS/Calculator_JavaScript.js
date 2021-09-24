@@ -6,7 +6,7 @@ const Calculator = {
 };
 
 function Input_Digit(digit) {
-    const {mDisplay_Value, Wait_Second_Operand } = Calculator;
+    const {Display_Value, Wait_Second_Operand } = Calculator;
     if (Wait_Second_Operand === true) {
         Calculator.Display_Value = digit;
         Calculator.Wait_Second_Operand = false;
