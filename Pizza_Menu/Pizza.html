@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Pizza Menu</title>
+
+        <META HTTP-EQUIV='Content-Type' CONTENT='text/html'; charset="utf-8">
+        <meta content='width=device-width,initial-sclae=1.0' name='viewport'>
+        <meta name='author' content='Jonah_Diaz'>
+        <link rel="stylesheet" type='text/css' href="CSS/Pizza_CSS.css">       
+    </head>
+
+    <body>
+        <div id ='menuBG'>
+            <h1 style="margin:0 0px 0 20px;">Pizza Menu!</h1>
+            <input id='btnOrder' type='button' onclick='getReciept()' value='Place Order'>
+            <form id='frmMenu'>
+                <div id='menu left'>
+                <h3>Size</h3>
+                <input class='size' type='radio' name= 'Size' value='Personal Pizza'>Personal Pizza<br>
+                <input class='size' type='radio' name= 'Size' value='Medium Pizza'>Medium Pizza<br>
+                <input class='size' type='radio' name= 'Size' value='Large Pizza'>Large Pizza<br>
+                <input class='size' type='radio' name= 'Size' value='XL Pizza'>XL Pizza<br>
+                </div>
+
+                <div>
+                    <input class='toppings' type='checkbox' name= 'Topping' value='Pepperoni'>Pepperoni<br>
+                    <input class='toppings' type='checkbox' name= 'Topping' value='Sausage'>Sausage<br>
+                    <input class='toppings' type='checkbox' name= 'Topping' value='Canadian Bacon'>Canadian Bacon<br>
+                    <input class='toppings' type='checkbox' name= 'Topping' value='Ground Beef'>Ground Beef<br>
+                    <input class='toppings' type='checkbox' name= 'Topping' value='Vegitarian'>Vegitarian<br>
+                    <input class='toppings' type='checkbox' name= 'Topping' value='Chicken'>Chicken<br>
+                </div>
+                <div id='cart'>
+                    <div id='showText'></div>
+                    <div id='totalPrice'></div>
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+        <script src='JS/Pizza_JS.js'></script>
+    </footer>
+
+</html>
