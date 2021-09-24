@@ -40,7 +40,7 @@ function Handle_Operator(Next_Operator) {
         Calculator.First_Operand = parseFloat(result);
     }
     Calculator.Wait_Second_Operand = true;
-    Calculator.operator + Next_Operator;
+    Calculator.operator = Next_Operator;
 }
 
 const Perform_Calculaton = {
