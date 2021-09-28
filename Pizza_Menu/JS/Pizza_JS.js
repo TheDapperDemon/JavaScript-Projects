@@ -1,13 +1,8 @@
 function getReciept() {
-    var text = "<h3>You Ordered:</h3>";
+    var text1 = "<h3>You Ordered:</h3>";
     var runningTotal = 0;
     var sizeTotal= 0;
-    
-    for (var i = 0; i < toppingArray.length; i++) {
-        if(toppingArray[i].checked) {
-            selectTopping.push(toppingArray[i].value);
-            text1 = text1+selectedSize+'<br>';
-        }
+        text1 = text1+selectedSize+'<br>';
     }
     if (selectedSize === 'Personal Pizza') {
         sizeTotal = 6;
@@ -31,13 +26,19 @@ function getReciept() {
     getTopping(runningTotal,text1);
 };
 
+function toppingArray() {
+    for (var i = 0; i < toppingArray.length; i++) {
+        if(toppingArray[i].checked) {
+            selectTopping.push(toppingArray[i].value);
+}
+
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
     var toppingArray = document.getElementsByClassName('toppings');
     for (var j = 0; j < toppingArray.length; j++) {
         if (toppingArray[j].checked) {
-            selectTopping.push(toppingArray[j].value);
+            selectedTopping.push(toppingArray[j].value);
             console.log('selected topping item: ('+toppingArray[j].value+')');
             text1 = text1+toppingArray[j].value+'<br>';
         }
