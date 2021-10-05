@@ -6,8 +6,9 @@
 		<meta name='author' content='Jonah_Diaz'>
 		<script src= 'https://unpkj.com/react@16/umg/react.development.js' crossorigin></script>
         <script src= 'https://unpkj.com/react-dom@16/umg/react-dom.development.js' crossorigin></script>
+        <script src= 'https://unpkg.com/babel-standalone@6.15.0/babel.min.js'></script>
 	</head>
-
+    
     <body>
         <div id='My_React_Code'>
             <script>
@@ -32,10 +33,29 @@
             </script>
 
             <script>
+                const X = React.createElement;
 
+                class likeButton extends React.Component {
+                    constructor(props) {
+                        super(props);
+                        this.state = { liked: false };
+                }
 
+                render() {
+                    if(this.state.liked) {
+                        return 'You clicked on the Like button!'
+                    }
 
-
+                    return X(
+                        'button',
+                        { onClick: () => this.setState({ liked: true }) },
+                        'Like'
+                    );
+                }
+                }
+                
+                const domContainer = document.querySelector('#like_button_container');
+                reactDOM.render(X(likeButton), domContainer);
             </script>
         </div>
 	</body>

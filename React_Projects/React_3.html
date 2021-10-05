@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head></head>
+		<script src= 'https://unpkj.com/react@16/umg/react.development.js' crossorigin></script>
+        <script src= 'https://unpkj.com/react-dom@16/umg/react-dom.development.js' crossorigin></script>
+        <script src= 'https://unpkg.com/babel-standalone@6.15.0/babel.min.js'></script>
+	</head>
+
+    <body>
+        <div id='JSX'></div>
+        <script type='text/babel'>
+            class Greeting extends React.Component {
+                render() {
+                    return <h1>Hello, Wolrd!</h1>
+                }
+            } 
+            
+        ReactDom.render(<Greeting />, document.getElementById('JSX'))
+        </script>
+    </body>
+</html>
