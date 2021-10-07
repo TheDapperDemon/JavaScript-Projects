@@ -10,7 +10,7 @@ function get_Todos() {
 function add() {
     var task = document.getElementById('task').value;
 
-    var todos = get_todos();
+    var todos = get_Todos();
     todos.push(task);
     localStorage.setItem('todo', JSON.stringify(todos));
     document.getElementById("task").value = '';
@@ -20,7 +20,7 @@ function add() {
 }
 
 function show() {
-    var todos = get_todos();
+    var todos = get_Todos();
     var html = '<ul>';
     for (var i = 0; i < todos.length; i++) {
         html += '<li>' + todos[i] + '<button class="remove" id="' + i + '">x</button></lt>';
