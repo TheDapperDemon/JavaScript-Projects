@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Jonah Diaz</title>
+        <link rel="stylesheet" type="text/css" href="/CSS/Portfolio_Website.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+               
+                <!--Display message if video fails to run-->
+                <h3 class="center"><p>"Come with me on a Jorney through the Code!"</p></h3>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jonah's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> My name is Jonah Diaz. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>I am a 23 year old film actor and coder based in Salt Lake City UT. I have a thurough understanding of HTML and CSS as well as Javascript. I am a very creative person with a prsctical tempermant. I'd like to consider my self a grounded creative.
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="/Pics/Dapper_Skull.jpg" alt="Dapper Demon">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! As an artist and actor I also really enjoy working with my hands and brainstormy abstract ideas for projects. 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy's</a> Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript. 
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here: 
+                    <br>
+                    <p class="center"><a href="https://github.com/TheDapperDemon/HTML-and-CSS-Projects.-main" target="_blank">The Dapper Demons Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <img src="./Pics/Whiskey.jpg" alt="Dapper Demon Beverage">
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="/Pics/sTattoo.jpg" alt="Dapper Demon Passtime">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+				<p class="center">jonah.diaz33@gmail.com</p><p class="center"><a href="https://www.linkedin.com/in/jonah-diaz-b6b82616b/">Linkedin</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
