@@ -4,7 +4,6 @@ Location of all projects for Jonah Diaz in the JavaScript Course: This repositor
 
 Tech: JavaScript, HTML, and CSS
 
-Launch:
 
 Examples of Use:
   
