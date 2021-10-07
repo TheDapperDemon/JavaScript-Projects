@@ -1,9 +1,26 @@
-/***** GENERAL STYLING *****/
-/* Body */
-body {
-    margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+
+html {
+    scroll-behavior: smooth;
 }
 
+/***** GENERAL STYLING *****/
+/* Body */
+
+body {
+    margin: 0%;
+    opacity: 1;
+    transition: 3s opacity;
+    letter-spacing: .2vw;
+    font-family: Avant Garde, Helvetica;
+    font-size: 1.5vw;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+
+body.fade-out {
+    opacity: .1;
+}
 /* Heading 1 elements */
 h1 {
     text-transform: uppercase; /* Capitalizing all h1 headings */
