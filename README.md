@@ -17,7 +17,6 @@ Examples of Use:
                Your classic game of TicTacToe. The program will randomly spin                      the dice to decide thwe order and the rest is history. Users                        can decide whitch token they would like to play as, and the                        winner is rewarded with a drawn win line, upbeat music, and                        flashing lights.
     
     
-    CALCULATOR:
-               A basic 4 function calculator. uses simple math to allow users to                  add, subtract, multiply, and divide on a sleek digital Calculator.
-   
-   
+   CALCULATOR:
+              A basic 4 function calculator. uses simple math to allow users to                   add, subtract, multiply, and divide on a sleek digital Calculator.
+
