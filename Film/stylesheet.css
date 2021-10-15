@@ -1,0 +1,398 @@
+:root{
+    --primary-color: #0f0f0f;
+    --secondary-color: #e7acb4;
+    --third-color: rgb(7, 3, 12);
+    --fourth-color: rgba(77, 13, 66, 0.5);
+  }
+  .dark-theme{
+    --primary-color: #140a41;
+    --secondary-color: #070505;
+    --third-color: rgb(107, 19, 19);
+    --fourth-color: rgb(32, 28, 28);
+  }
+  
+  #icon{
+    width: 30px;
+    cursor: pointer;
+  }
+  body{
+    background-image: url('Film/Pics/Set2.jfif');
+    background-color: var(--third-color);
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    font-size: 18px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    outline: none;
+    background-color: rgb(51, 8, 34);
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(1, 3, 3, 0.452);
+  }
+  .dashed{
+    border-top: 3px dashed rgb(102, 24, 24);
+  }
+  h1, h5{
+    text-align: center;
+    color: var(--secondary-color)
+  }
+  h3, h2{
+    color: var(--secondary-color);
+    text-align: center;
+  }
+  
+  p{
+    color: var(--secondary-color);
+  }
+  html{
+    background-color: var(--third-color) ;
+  }
+  .active {
+    color: var(--primary-color);
+  }
+  ul {
+    flex: 1;
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--fourth-color);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: rgba(22, 10, 43, 0.178);
+  }
+  * {box-sizing: border-box}
+  body {font-family:"Times New Roman", Times, serif;}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Caption text */
+  .text {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: var(--primary-color);
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(70, 2, 2);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #0e0d0d;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+  body {font-family: "Times New Roman", Times, serif;}
+  * {box-sizing: border-box;}
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: var(--primary-color);
+  }
+  
+  /* Add a background color when the inputs get focus */
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(10, 2, 2);
+    outline: none;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #080808;
+    color: var(--secondary-color);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  /* Extra styles for the cancel button */
+  
+  
+  /* Add padding to container elements */
+  .container {
+    text-align: center;  
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 40%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d73;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: var(--primary-color);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid rgb(8, 0, 0);
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid var(--primary-color);
+    margin-bottom: 25px;
+  }
+   
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+  }
+  
+  /* section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: var(--primary-color);
+  }
+  
+  .container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin:0 auto;
+  } */
+  
+  .app-title{
+    margin-bottom: 30px;
+    font-size: 80px;
+    color: var(--secondary-color);
+    text-align : center;
+  }
+  
+  /* .myform{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px;
+  } */
+  
+  .myform input{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.514);
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search{
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto/repeat(auto-fit, minmax(300,1fr));
+  }
+  
+  .item{
+    margin: auto;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 15x;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .item img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+  }
+  
+  .item .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .item .title{
+    color: grey;
+    margin: 20px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  
+  .view-btn{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+    color:var(--primary-color);
+    font-size: 15px;
+    margin-top: 20px;
+    align-self: flex-start;
+    border-radius: 5px;
+  }
+  
+
+  
+  /* Bootstrap Grid */
+
+  .themed-grid-col {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid rgba(86, 61, 124, .2);
+  }
+  
+  .themed-container {
+    padding: .75rem;
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 123, 255, .15);
+    border: 1px solid rgba(0, 123, 255, .2);
+  }
+  
