@@ -9,13 +9,16 @@ Examples of Use:
   
   
    PIZZA MENU:
-              This program utilizes algorithms to select the size and topping of                 your pizza, it then condenses that information and calculates and                   acurate total.
+              This program utilizes algorithms to select the size and topping of your pizza, it then condenses that information and calculates and acurate total.
               
    
    TIC-TAC-TOE:
-               Your classic game of TicTacToe. The program will randomly spin                      the dice to decide thwe order and the rest is history. Users                        can decide whitch token they would like to play as, and the                        winner is rewarded with a drawn win line, upbeat music, and                        flashing lights.
+               Your classic game of TicTacToe. The program will randomly spin the dice to decide thwe order and the rest is history. Users can decide whitch token they would like                to play as, and the winner is rewarded with a drawn win line, upbeat music, and flashing lights.
     
     
    CALCULATOR:
-              A basic 4 function calculator. uses simple math to allow users to                   add, subtract, multiply, and divide on a sleek digital Calculator.
+              A basic 4 function calculator. uses simple math to allow users to add, subtract, multiply, and divide on a sleek digital Calculator.
 
+
+FILM WEBPAGE: 
+              
